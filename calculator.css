@@ -22,6 +22,7 @@ body{
     font-weight: bolder;
 }
 .digit-container{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 120px) ;
     grid-template-rows: repeat(5, 100px);
@@ -50,4 +51,14 @@ p{
 .operator:active, .btn:active, .zero:active, .clear:active{
     cursor: pointer;
     background-color: gray;
+}
+/*Desktop Styles*/
+
+@media only screen and (min-width: 960px){
+    .digit-container{
+        display: grid;
+        grid-template-columns: repeat(4, 120px) ;
+        grid-template-rows: repeat(5, 100px);
+        margin: 0 2%;
+    }
 }

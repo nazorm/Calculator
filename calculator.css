@@ -1,0 +1,53 @@
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+.container{
+    background-color: gainsboro;
+    margin: 30px auto;
+    width: 500px;
+    height: 650px ;
+}
+.result-head{
+    height: 120px;
+    margin: 10% 2% 5%;
+    background-color: white;
+    border: 1px solid yellow;
+}
+.result{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.digit-container{
+    display: grid;
+    grid-template-columns: repeat(4, 120px) ;
+    grid-template-rows: repeat(5, 100px);
+    margin: 0 2%;
+}
+p{
+    display: block;
+    text-align: end;
+    padding-right: 5%;
+}
+.clear{
+    grid-column: 1/3;
+}
+.zero{
+    grid-column:1/4 ;
+}
+.operator{
+    background-color: orange;
+}
+.operator:hover, .btn:hover, .zero:hover, .clear:hover{
+    cursor: pointer;
+    background-color: wheat;
+
+}
+
+.operator:active, .btn:active, .zero:active, .clear:active{
+    cursor: pointer;
+    background-color: gray;
+}

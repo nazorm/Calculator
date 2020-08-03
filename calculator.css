@@ -8,7 +8,7 @@ body{
 .container{
     background-color: gainsboro;
     margin: 30px auto;
-    width: 500px;
+    width: 100%;
     height: 650px ;
 }
 .result-head{
@@ -24,7 +24,7 @@ body{
 .digit-container{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 120px) ;
+    grid-template-columns: repeat(4, 98px) ;
     grid-template-rows: repeat(5, 100px);
     margin: 0 2%;
 }
@@ -60,5 +60,11 @@ p{
         grid-template-columns: repeat(4, 120px) ;
         grid-template-rows: repeat(5, 100px);
         margin: 0 2%;
+    }
+    .container{
+        background-color: gainsboro;
+        margin: 30px auto;
+        width: 500px;
+        height: 650px ;
     }
 }
